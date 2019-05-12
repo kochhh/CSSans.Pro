@@ -1,0 +1,363 @@
+.cssans\: {
+  // Letter 'А'
+  &\%D0\%90 {
+    @extend .cssans\:A;
+  }
+
+  // Letter 'Б'
+  &\%D0\%91 {
+    width: 2.5em;
+    background: linear-gradient(90deg, RGB(var(--cssans-primary)), RGB(var(--cssans-primary)));
+    background-repeat: no-repeat;
+    background-size: 1.5em 3em;
+
+    &::before {
+      width: 2em;
+      height: 1em;
+      top: 0;
+      left: 0;
+      background: RGB(var(--cssans-accent1));
+      z-index: -1;
+    }
+
+    &::after {
+      width: 2em;
+      height: 2em;
+      background: RGB(var(--cssans-secondary));
+      border-radius: 50%;
+      bottom: 0;
+      left: .5em;
+      z-index: -1;
+    }
+  }
+
+  // Letter 'В'
+  &\%D0\%92 {
+    @extend .cssans\:B;
+  }
+
+  // Letter 'Г'
+  &\%D0\%93 {
+    width: 2em;
+    background: linear-gradient(90deg, RGB(var(--cssans-primary)), RGB(var(--cssans-primary)));
+    background-repeat: no-repeat;
+    background-size: 1em 3em;
+
+    &::before {
+      width: 2em;
+      height: 1em;
+      top: 0;
+      left: 0;
+      background: RGB(var(--cssans-secondary));
+      z-index: -1;
+    }
+  }
+
+  // Letter 'Д'
+  &\%D0\%94 {
+    width: 3em;
+
+    &::before {
+      width: 2em;
+      height: 3em;
+      left: 1em;
+      top: 0;
+      background: linear-gradient(90deg, RGB(var(--cssans-secondary)) 1em, RGB(var(--cssans-primary)) 1em);
+      background-repeat: no-repeat;
+      border-top-left-radius: 1em;
+    }
+
+    &::after {
+      background: RGB(var(--cssans-accent1));
+      border-top-left-radius: 1em;
+      height: 1em;
+      left: 0;
+      top: 2em;
+      width: 1em;
+    }
+  }
+
+  // Letter 'Е'
+  &\%D0\%95 {
+    @extend .cssans\:E;
+  }
+
+  // Letter 'Ё'
+  &\%D0\%81 {
+    @extend .cssans\:E;
+
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Ж'
+  &\%D0\%96 {
+    width: 3em;
+    height: 1em;
+    background: linear-gradient(90deg, RGB(var(--cssans-accent1)) 1em, RGB(var(--cssans-accent3)) 1em);
+    background-repeat: no-repeat;
+    border-radius: 1em 1em 0 0;
+
+    &::before {
+      width: 3em;
+      height: 2em;
+      top: -2em;
+      background: RGB(var(--cssans-secondary));
+      border-radius: 0 0 1em 1em;
+    }
+
+    &::after {
+      width: 1em;
+      height: 3em;
+      left: 1em;
+      top: -2em;
+      background: RGB(var(--cssans-primary));
+    }
+  }
+
+  // Letter 'З'
+  &\%D0\%97 {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'И'
+  &\%D0\%98 {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Й'
+  &\%D0\%99 {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'К'
+  &\%D0\%9A {
+    @extend .cssans\:K;
+  }
+
+  // Letter 'Л'
+  &\%D0\%9B {
+    &::before {
+      width: 2em;
+      height: 3em;
+      background: linear-gradient(90deg, RGB(var(--cssans-secondary)) 1em, RGB(var(--cssans-primary)) 1em) no-repeat;
+      border-top-left-radius: 1em;
+    }
+  }
+
+  // Letter 'М'
+  &\%D0\%9C {
+    @extend .cssans\:M;
+  }
+
+  // Letter 'Н'
+  &\%D0\%9D {
+    @extend .cssans\:H;
+  }
+
+  // Letter 'О'
+  &\%D0\%9E {
+    @extend .cssans\:O;
+  }
+
+  // Letter 'П'
+  &\%D0\%9F {
+    width: 2em;
+    background:
+      linear-gradient(90deg, RGB(var(--cssans-primary)) 1em, RGB(var(--cssans-accent1)) 1em), linear-gradient(90deg, RGB(var(--cssans-primary)) 1em, RGB(var(--cssans-secondary)) 1em), linear-gradient(90deg, RGB(var(--cssans-primary)) 1em, RGB(var(--cssans-secondary)) 1em);
+    background-position: 0 0, 0 1em, 0 2em;
+    background-repeat: no-repeat;
+    background-size: 2em 1em;
+  }
+
+  // Letter 'Р'
+  &\%D0\%A0 {
+    @extend .cssans\:P;
+  }
+
+  // Letter 'С'
+  &\%D0\%A1 {
+    @extend .cssans\:C;
+  }
+
+  // Letter 'Т'
+  &\%D0\%A2 {
+    @extend .cssans\:T;
+  }
+
+  // Letter 'У'
+  &\%D0\%A3 {
+    width: 2em;
+    background: linear-gradient(90deg, RGB(var(--cssans-primary)), RGB(var(--cssans-primary)));
+    background-position: 1em 0;
+    background-repeat: no-repeat;
+    background-size: 1em 3em;
+    border-bottom-right-radius: 1em;
+
+    &::before {
+      width: 1em;
+      height: 2em;
+      background: RGB(var(--cssans-secondary));
+      border-bottom-left-radius: 1em;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      width: 1em;
+      height: 1em;
+      background: RGB(var(--cssans-accent3));
+      border-bottom-left-radius: 1em;
+      top: 2em;
+      left: 0;
+    }
+  }
+
+  // Letter 'Ф'
+  &\%D0\%A4 {
+    width: 3em;
+    background: linear-gradient(90deg, RGB(var(--cssans-primary)), RGB(var(--cssans-primary)));
+    background-position: 1em 0;
+    background-repeat: no-repeat;
+    background-size: 1em 3em;
+
+    &::before {
+      width: 1em;
+      height: 2em;
+      background: RGB(var(--cssans-accent1));
+      border-radius: 1em 0 0 1em;
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      width: 1em;
+      height: 2em;
+      background: RGB(var(--cssans-secondary));
+      border-radius: 0 1em 1em 0;
+      left: 2em;
+      top: 0;
+    }
+  }
+
+  // Letter 'Х'
+  &\%D0\%A5 {
+    @extend .cssans\:X;
+  }
+
+  // Letter 'Ц'
+  &\%D0\%A6 {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Ч'
+  &\%D0\%A7 {
+    &::before {
+      width: 1em;
+      height: 3em;
+      background: RGB(var(--cssans-primary));
+      top: 0;
+      left: 1em;
+    }
+
+    &::after {
+      width: 1em;
+      height: 2em;
+      background: RGB(var(--cssans-secondary));
+      border-bottom-left-radius: 1em;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  // Letter 'Ш'
+  &\%D0\%A8 {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Щ'
+  &\%D0\%A9 {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Ъ'
+  &\%D0\%AA {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Ы'
+  &\%D0\%AB {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Ь'
+  &\%D0\%AC {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Э'
+  &\%D0\%AD {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Ю'
+  &\%D0\%AE {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+
+  // Letter 'Я'
+  &\%D0\%AF {
+    &::before {
+    }
+
+    &::after {
+    }
+  }
+}
